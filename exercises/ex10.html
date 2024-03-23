@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hi">international HI!</h1>
+    <input type="text" id="nat" placeholder="type here your nationality">
+    <input type="button" value="enviar" id="but">
+    <p id="hi">hi</p>
+    <script>
+        var button = window.document.querySelector('input#but');
+        button.addEventListener('click', sayHi);
+        function sayHi(){
+            let nat = window.document.querySelector('input#nat').value;
+            let hi = window.document.querySelector('p#hi');
+            if(nat === "brazilian"){
+                hi.innerHTML = "Oi, você é brasileiro";
+            }
+            else if(nat === "portuguese"){
+                hi.innerHTML = "olá, tu es português";
+            }
+            else{
+                hi.innerHTML = `hello, you are ${nat}`
+            }
+        }
+    </script>
+</body>
+</html>
