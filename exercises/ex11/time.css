@@ -1,0 +1,36 @@
+#noite::after {
+    content: "";
+    background: url('fotonoite.png');
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 90%;
+    z-index: -1;
+    background-size: cover;
+    filter: blur(90px);
+}
+#manha::after {
+    content: "";
+    background: url('fotomanha.png');
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 90%;
+    z-index: -1;
+    background-size: cover;
+    filter: blur(90px);
+}
+#tarde::after {
+    content: "";
+    background: url('fototarde.png');
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 90%;
+    z-index: -1;
+    background-size: cover;
+    filter: blur(90px);
+}
